@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="keywords" content="HTML">
+    <meta name="description" content="Trabalhe Conosco">
+    <meta name="author" content="by Felipe">
+    <title>Oportunidades</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Portal de Oportunidades</h1>
+        <h2>Cadastre seu currículo no portal para participar do nosso banco de talentos</h2>
+    </header>
+
+    <nav>
+        <p class="etapas">
+            <a href="cadastro_pag1.html">Etapa 1</a> |
+            <b>Etapa 2</b> |
+            <a href="cadastro_pag3.html">Etapa 3</a>
+        </p>
+    </nav>
+
+    <section class="content">
+        <p>Você está em: Dados Pessoais > <b>Dados Profissionais</b> > Enquete</p>
+        
+        <form action="dados_profissionais.php" method="post">
+            <fieldset>
+                <legend>Faça um resumo profissional de você.</legend>
+                <textarea name="message" rows="10" cols="100" required placeholder="Descreva aqui suas experiências ao longo de sua carreira profissional."></textarea>
+            </fieldset><br><br>
+            
+            <fieldset class="pro">
+                <legend>Descreva suas competências e experiências.</legend>
+                <textarea name="message" rows="10" cols="100" required placeholder="Cite aqui suas principais competências que possam colaborar com o nosso time."></textarea>
+            </fieldset><br><br>
+
+            <fieldset class="pro">
+                <legend>Cite quais cursos ou certificações você possui.</legend>
+                <textarea name="message" rows="10" cols="100" required placeholder="Dê mais detalhes sobre seus cursos ou certificações."></textarea>
+            </fieldset><br><br><br>
+
+            <p class="button">
+                <input type="submit" value="Salvar Dados Profissionais" onclick="alert('Dados Salvos!')">
+            </p>
+        </form>
+    </section>
+    <p class="endpage"></p>
+</body>
+</html>

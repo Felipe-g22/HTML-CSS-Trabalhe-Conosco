@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta name="keywords" content="HTML">
+	<meta name="description" content="Trabalhe Conosco">
+	<meta name="author" content="by Felipe">
+	<title>Oportunidades</title>
+	
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+	<header>
+		<h1>Portal de Oportunidades</h1>
+		<h2>Cadastre seu currículo no portal para participar do nosso banco de talentos</h2>
+	</header>
+	
+	<nav>
+		<p class="etapas">
+			<b>Etapa 1</b> | 
+			<a href="cadastro_pag2.html">Etapa 2</a> | 
+			<a href="cadastro_pag3.html">Etapa 3</a>
+		</p>
+	</nav>
+	
+	<section class="content">
+		<p>Você está em: <b>Dados Pessoais</b> > Dados Profissionais > Enquete</p>
+		
+		<form action="dados_pessoais.php" method="post">
+			<fieldset>
+				<legend>Preencha todos os seus Dados Pessoais</legend>
+				
+				<label for="nomecompleto">Nome Completo:</label>
+				<input type="text" id="nomecompleto" name="nomecompleto">
+				<br><br>
+				
+				<label for="cpf">CPF:</label>
+				<input type="number" id="cpf" name="cpf" required placeholder="Somente números">
+				<br><br>
+
+				<label for="nascimento">Data de Nascimento:</label>
+				<input type="date" id="nascimento" name="nascimento">
+				<br><br>
+
+				<label for="genero">Sexo:</label>
+				<select id="genero" name="genero">
+					<option value="sel">--- Selecione ---</option>
+					<option value="male">Masculino</option>
+					<option value="female">Feminino</option>
+				</select>
+				<br><br>
+
+				<label for="naturalidade">Naturalidade:</label>
+				<select id="naturalidade" name="naturalidade">
+					<option value="sel">--- Selecione ---</option>
+					<option value="mao">Manaus-AM</option>
+					<option value="outros">Outros Estados</option>
+				</select>
+				<br><br>
+
+				<label for="escolaridade">Escolaridade:</label>
+				<select id="escolaridade" name="escolaridade">
+					<option value="sel1">--- Selecione ---</option>
+					<option value="ef">Ensino Fundamental</option>
+					<option value="em">Ensino Médio</option>
+					<option value="es">Ensino Superior</option>
+					<option value="pm">Pós ou MBA</option>
+					<option value="md">Mestrado ou Doutorado</option>
+				</select>
+				<br><br>
+
+				<label for="telefone">Telefone:</label>
+				<input type="tel" id="telefone" name="telefone" required placeholder="Ex.: (xx) xxxxx-xxxx">
+				<br><br>
+
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" name="email" required placeholder="Ex.: Joao.silva@gmail.com">
+			</fieldset>
+			
+			<p class="button">
+				<input type="submit" value="Salvar Dados Pessoais" onclick="alert('Dados Salvos!')">
+			</p>
+			
+		</form>
+	</section>
+	<p class="endpage"></p>
+</body>
+</html>

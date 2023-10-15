@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="keywords" content="HTML">
+    <meta name="description" content="Trabalhe Conosco">
+    <meta name="author" content="by Felipe">
+    <title>Oportunidades</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Portal de Oportunidades</h1>
+        <h2>Cadastre seu currículo no portal para participar do nosso banco de talentos</h2>
+    </header>
+
+    <nav>
+        <p class="etapas">
+            <a href="cadastro_pag1.html">Etapa 1</a> |
+            <a href="cadastro_pag2.html">Etapa 2</a> |
+            <b>Etapa 3</b>
+        </p>
+    </nav>
+
+    <section class="content">
+        <p>Você está em: Dados Pessoais > Dados Profissionais > <b>Enquete</b></p>
+        
+        <form action="feedback.php" method="post">
+            <fieldset>
+                <legend>O que achou deste site?</legend>
+                <nav class="enq">
+                <input type="radio" name="idade" value="ruim"> Ruim  =´(
+                <br>
+                <input type="radio" name="idade" value="maisoumenos"> Mais ou menos  = / 
+                <br>
+                <input type="radio" name="idade" value="bom"> Bom  = )
+                <br>
+                <input type="radio" name="idade" value="excelente"> Excelente  = D
+                </nav>
+            </fieldset><br><br>
+
+            <fieldset>
+                <legend>O que você mais gostou neste site?</legend>
+                <nav class="enq">
+                <input type="checkbox" name="design">
+                Design<br>
+                <input type="checkbox" name="layout">
+                Layout<br>
+                <input type="checkbox" name="conteudo">
+                Conteúdo<br>
+                <input type="checkbox" name="criatividade">
+                Criatividade<br>
+                <input type="checkbox" name="interacao">
+                Interação<br>
+                </nav>
+            </fieldset><br><br>
+
+            <fieldset>
+                <legend>O que você menos gostou neste site?</legend>
+                <nav class="enq">
+                <input type="checkbox" name="falta_formatacao">
+                Falta mais Formatação<br>
+                <input type="checkbox" name="estrutura_baguncada">
+                Estrutura Bagunçada<br>
+                <input type="checkbox" name="conteudo_fraco">
+                Conteúdo Fraco<br>
+                <input type="checkbox" name="falta_criatividade">
+                Falta de Criatividade<br>
+                <input type="checkbox" name="confuso">
+                Confuso<br>
+                </nav>
+            </fieldset><br><br><br>
+
+            <p class="button">
+                <input type="submit" value="Enviar Feedback" onclick="alert('Feedback Enviado! Obrigado pela Atenção.')">
+            </p>
+        </form>
+    </section>
+    <p class="endpage"></p>
+</body>
+</html>

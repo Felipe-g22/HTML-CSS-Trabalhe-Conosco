@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f2f2f2;
+    background-image: url("dream.jpg");
+    background-repeat: no-repeat;  /* Evita a repetição da imagem */
+    background-size: cover;       /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-position: top;	/* Alinha a imagem ao topo*/
+	font-family: "Arial", sans-serif;
+	color: #333;
+}
+
+header {
+	text-align: center;
+	padding: 20px;
+	background-color: hsla(172, 100%, 10%, 0.502);
+	color: #fff;
+}
+
+h1 {
+	font-size: 36px;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+nav {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.etapas {
+	font-size: 20px;
+	padding: 20px;
+	color: #ffffff;
+	background-color: hsla(172, 100%, 17%, 0.502) ;
+	color-scheme: red;
+	text-align: center;
+	max-width: 850px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+.content {
+	text-align: center;
+	max-width: 850px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: hsla(172, 100%, 17%, 0.502);
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	color: white;
+}
+
+fieldset {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	margin: 10px 0;
+}
+
+legend {
+	font-size: 24px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+input[type="email"],
+input[type="tel"] {
+	width: 50%;
+	padding: 10px;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007fff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto;
+}
+
+input[type="submit"]:hover {
+    background-color: #005fcc;
+}
+
+.enq {
+    text-align: left;
+}
+
+.endpage {
+	margin: 20px;
+}
+
+button:hover {
+	background-color: #005fcc;
+}
